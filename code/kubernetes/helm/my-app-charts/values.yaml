@@ -1,0 +1,6 @@
+replicaCount: 1
+
+backend:
+  image:
+    repository: alvaromaia/techliferay
+    tag: 0.0.3

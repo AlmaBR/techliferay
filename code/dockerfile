@@ -1,0 +1,11 @@
+FROM node:14
+
+WORKDIR /home/app
+
+COPY . .
+
+RUN yarn install
+
+RUN chmod +x entry.sh
+
+ENTRYPOINT ["./entry.sh"]
